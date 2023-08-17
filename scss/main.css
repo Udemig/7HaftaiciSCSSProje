@@ -1,0 +1,145 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*, *::before, *::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333333;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #1e72bc;
+  padding: 10px 20px;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #000000;
+}
+
+/*Header Alanı Başlangıç*/
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 100%;
+  box-shadow: 0 8px 6px -6px #999999;
+  padding: 0 10px;
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+}
+@media (min-width: 576px) {
+  header .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+header .navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+}
+header .navbar-top img {
+  max-width: 235px;
+}
+header .navbar .menu-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #1e72bc;
+  border: 2px solid #1e72bc;
+  padding: 5px;
+  font-size: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media (min-width: 800px) {
+  header .navbar .menu-toggle {
+    display: none;
+  }
+}
+header .navbar .nav-list {
+  display: none;
+}
+@media (min-width: 800px) {
+  header .navbar .nav-list {
+    display: flex;
+  }
+}
+header .navbar .nav-list a {
+  padding: 5px 15px;
+}
+header .navbar .nav-list a:hover {
+  color: #1e72bc;
+}
+header .navbar .navbar-button {
+  margin-top: 10px;
+}
+header .navbar .navbar-button .btn {
+  display: block;
+}
+
+.sidebar {
+  position: fixed;
+  background-color: #1e72bc;
+  height: calc(100vh - 135.41px);
+  top: 135.41px;
+  width: 100%;
+}
+.sidebar.open {
+  left: 0;
+}
+.sidebar-nav-list {
+  padding: 10px;
+}
+.sidebar-nav-list li {
+  padding: 10px;
+  text-align: center;
+}
+.sidebar-nav-list li a {
+  color: #ffffff;
+  font-size: 20px;
+}
+.sidebar-nav-list li a:hover {
+  color: #0aceb1;
+}/*# sourceMappingURL=main.css.map */

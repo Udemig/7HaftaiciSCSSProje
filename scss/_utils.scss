@@ -1,0 +1,19 @@
+.container{
+    width: $container-width;
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.btn{
+    display: inline-block;
+    background-color: $primary-color;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #000000;
+    }
+}
