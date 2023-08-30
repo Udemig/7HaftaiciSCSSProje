@@ -17,3 +17,24 @@
         background-color: #000000;
     }
 }
+
+.section-title{
+    font-size: 45px;
+    margin-top: 50px;
+    color: #333333;
+    margin-bottom: 50px;
+
+
+    &::after{
+        content: '';
+        width: 110px;
+        height: 5px;
+        background-color: #dddddd;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.section-title.center{
+    text-align: center;
+}
